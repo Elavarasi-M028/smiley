@@ -17,7 +17,7 @@ body{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: linear-gradient(48deg,#ecad30,#fffb38);
+    background: linear-gradient(49deg,#ecad30,#fffb38);
     border: 3px solid #dd5920;
     box-shadow: inset 0px 0px 50px #ddd207,0px 0px 60px #caf020, 0px 0px 100px #e7a6a6;
     display: flex;
