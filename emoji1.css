@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box_sizing: border-box;
+}
+body{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  background-image: linear-gradient(rgb(38, 59, 223),rgb(39, 150, 197),rgb(133, 213, 242),pink,rgb(216, 103, 178),rgb(249, 0, 183));
+    cursor: pointer;
+}
+.face{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#ffe522,#fffb38);
+    border: 3px solid #dd5920;
+    box-shadow: inset 0px 0px 50px #ddd207,0px 0px 60px #caf020, 0px 0px 100px #e7a6a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face:hover
+{
+    background: radial-gradient(rgb(223, 178, 65),rgb(247, 75, 75));
+    transition: all 2s ease;
+    box-shadow: inset 0px 0px 50px #c6754a,0px 0px 60px #e48a41, 0px 0px 100px #f2abab;
+
+}
+.face:before{
+    content: '';
+    position: absolute;
+    top: 180px;
+    width: 150px;
+    height: 70px;
+    background: linear-gradient(40deg,red,rgb(246, 159, 173));
+    border: 2.5px solid brown;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    transition: all 2s ease;
+
+}
+.face:hover:before{
+    top: 210px;
+    width: 150px;
+    height: 20px;
+    background: radial-gradient(pink,rgb(223, 5, 5));
+    border: 3px solid brown;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+.eyes{
+    position: relative;
+    top: -40px;
+    display: flex;
+}
+.eye{
+    position: relative;
+    height: 90px;
+    width: 80px;
+    display: block;
+    background: radial-gradient(white,#a0eeff);
+    margin: 0 15px;
+    border-radius: 50%;
+
+}
+.eye:before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left:25px;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 50px;
+    background: radial-gradient(white,rgb(66, 25, 25),#cb9964);
+    border-radius: 50%;
+    border-radius: #333;
+    transition: all 2s ease;
+    
+}
+.face:hover .eye:before{
+    top:64px;
+    left:40px;
+   
+}
+
